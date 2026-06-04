@@ -41,6 +41,24 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
+        .updated-text {
+            font-size: 4em;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
         p {
             font-size: 1.2em;
             margin-bottom: 30px;
@@ -97,6 +115,7 @@
 <body>
     <div class="container">
         <h1>🌿 Green Page 🌿</h1>
+        <div class="updated-text">Updated!!</div>
         <p>Welcome to the green page! This is a fresh, vibrant page filled with the beauty of nature.</p>
         
         <div class="button-group">
